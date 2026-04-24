@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Georgia", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  
+  --color-natural-50: #fdfcf8;
+  --color-natural-100: #f4f1ea;
+  --color-natural-200: #e5e0d3;
+  --color-natural-600: #8ea08e;
+  --color-natural-700: #7c8a7c;
+  --color-natural-800: #5f6b5f;
+  --color-natural-900: #2d3436;
+}
+
+@layer base {
+  body {
+    @apply bg-natural-50 text-natural-900 antialiased;
+  }
+}
