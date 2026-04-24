@@ -126,7 +126,6 @@ END:VCARD`;
                     <Globe size={24} />
                   </div>
                   <div>
-                    <p className="text-[10px] uppercase font-bold text-slate-400">Digital Card</p>
                   </div>
                 </div>
               </div>
