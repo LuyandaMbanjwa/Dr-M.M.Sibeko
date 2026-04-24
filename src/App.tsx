@@ -48,7 +48,7 @@ END:VCARD`;
         >
           <div className="w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full border-4 border-white shadow-2xl overflow-hidden mb-6 bg-medical-800">
             <img
-              src="/Dr Sibeko.jpg"
+              src="/dr-sibeko.jpg"
               alt={doctorInfo.name}
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
