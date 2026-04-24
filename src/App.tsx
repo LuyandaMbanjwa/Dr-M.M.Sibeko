@@ -107,7 +107,7 @@ END:VCARD`;
                   </div>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-medical-800/40">Licensing</p>
-                    <p className="text-medical-900 font-bold">HPCSA Registration #{doctorInfo.licenseNo}</p>
+                    <p className="text-medical-900 font-bold">Practice Number {doctorInfo.licenseNo}</p>
                   </div>
                 </div>
 
@@ -127,7 +127,6 @@ END:VCARD`;
                   </div>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-slate-400">Digital Card</p>
-                    <p className="text-slate-900 font-bold">ais-sibeko-profile.com</p>
                   </div>
                 </div>
               </div>
