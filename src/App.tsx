@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Phone, Printer, MapPin, Award, MessageCircle, UserPlus, Globe, ChevronRight } from "lucide-react";
+import profilePic from "./assets/dr-sibeko.jpg";
 
 export default function App() {
   const doctorInfo = {
@@ -48,7 +49,7 @@ END:VCARD`;
         >
           <div className="w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full border-4 border-white shadow-2xl overflow-hidden mb-6 bg-medical-800">
             <img
-              src="/dr-sibeko.jpg"
+              src={profilePic}
               alt={doctorInfo.name}
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
