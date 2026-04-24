@@ -4,21 +4,24 @@
 Building a professional digital business card for Dr. M.M. Sibeko, a medical practitioner.
 
 ## Decisions Made
-- **Aesthetic**: Mixed "Clean Utility" (Recipe 8) and "Luxury Prestige" (Recipe 12) from `frontend-design` skills.
-- **Color Palette**: Medical blues and clean whites to convey trust and professionalism.
-- **Typography**: Using Inter for a modern, legible feel.
-- **Icons**: Using `lucide-react` for standard UI symbols.
-- **Animations**: Using `motion/react` for smooth entrance of the card.
-- **Image Strategy**: Attempted to generate a portrait but hit quota limit; using a high-quality placeholder that reflects the medical profession as a fallback, but will prioritize a clean layout so the user can easily swap in their real photo.
-- **Contact Handling**: Added interactive buttons for "Call", "WhatsApp", and "Maps".
+- **Aesthetic**: Switched back to professional "Medical Blue" theme (Recipe 8 variation).
+- **Color Palette**: Dark medical blues (#0369a1, #0c4a6e) and clean whites.
+- **Typography**: Retained Inter and Georgia pairings for authority.
+- **Image**: Using user-uploaded `/Dr Sibeko.jpg` as the primary profile photo.
+- **Location**: Added an embedded Google Maps iframe for the practice address.
+- **Animations**: Using `motion/react` for entrance animations on load.
 
 ## Task Checklist
 - [x] Update metadata.json
 - [x] Configure theme and fonts in index.css
 - [x] Implement core UI in App.tsx
-- [x] Apply "Natural Tones" theme restyling
-- [x] Add interactive contact features
+- [x] Implement full-screen mobile-optimized layout
+- [x] Update profile photo to user upload
+- [x] Integrate Google Maps (Standard Embed - No API key required)
+- [x] Add dynamic VCard download functionality
+- [x] Verify final address (Dundee 3000)
 - [x] Verify build and linting
 
 ## Known Issues
-- Image generation quota exceeded. Using a professional high-quality doctor portrait placeholder from Unsplash.
+- Standard Google Maps embed is non-interactive (no panning) without a key, but providing a direct "Get Directions" link solves this for users.
+- VCard download is a client-side generated blob; works on most modern mobile browsers.

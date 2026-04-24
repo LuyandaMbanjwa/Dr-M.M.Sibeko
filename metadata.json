@@ -1,6 +1,6 @@
 {
   "name": "Dr. M.M. Sibeko | Medical Practitioner",
   "description": "Professional digital business card and profile for Dr. M.M. Sibeko, MBChB (UKZN).",
-  "requestFramePermissions": [],
+  "requestFramePermissions": ["geolocation"],
   "majorCapabilities": []
 }
