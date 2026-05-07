@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Phone, Printer, MapPin, Award, MessageCircle, UserPlus, Globe, ChevronRight } from "lucide-react";
+import { Phone, Printer, MapPin, Award, MessageCircle, UserPlus, Mail, ChevronRight } from "lucide-react";
 import profilePic from "./assets/dr-sibeko.jpg";
 
 export default function App() {
@@ -10,6 +10,7 @@ export default function App() {
     contacts: {
       telefax: "034 212 2442",
       cell: "072 622 0505",
+      email: "sibekomm@gmail.com",
     },
     address: "11 Victoria Street, Dundee 3000",
   };
@@ -22,6 +23,7 @@ ORG:Medical Practice
 TITLE:Medical Practitioner
 TEL;TYPE=CELL:${doctorInfo.contacts.cell}
 TEL;TYPE=FAX:${doctorInfo.contacts.telefax}
+EMAIL:${doctorInfo.contacts.email}
 ADR;TYPE=WORK:;;11 Victoria Street;Dundee;;3000;South Africa
 NOTE:License No: ${doctorInfo.licenseNo}
 END:VCARD`;
@@ -107,7 +109,7 @@ END:VCARD`;
                   </div>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-medical-800/40">Licensing</p>
-                    <p className="text-medical-900 font-bold">Practice Number {doctorInfo.licenseNo}</p>
+                    <p className="text-medical-900 font-bold">HPCSA Registration #{doctorInfo.licenseNo}</p>
                   </div>
                 </div>
 
@@ -121,13 +123,15 @@ END:VCARD`;
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-5 rounded-3xl bg-slate-50 border border-slate-100 group transition-all">
+                <a href={`mailto:${doctorInfo.contacts.email}`} className="flex items-center gap-4 p-5 rounded-3xl bg-slate-50 border border-slate-100 group transition-all">
                   <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-medical-700 shadow-sm group-hover:scale-110 transition-transform">
-                    <Globe size={24} />
+                    <Mail size={24} />
                   </div>
                   <div>
+                    <p className="text-[10px] uppercase font-bold text-slate-400">Email Address</p>
+                    <p className="text-slate-900 font-bold">{doctorInfo.contacts.email}</p>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
 

@@ -18,7 +18,8 @@ Building a professional digital business card for Dr. M.M. Sibeko, a medical pra
 - [x] Implement full-screen mobile-optimized layout
 - [x] Update profile photo to user upload
 - [x] Integrate Google Maps (Standard Embed - No API key required)
-- [x] Add dynamic VCard download functionality
+- [x] Add dynamic VCard download functionality (now including email)
+- [x] Add email contact information (sibekomm@gmail.com)
 - [x] Verify final address (Dundee 3000)
 - [x] Fix deployment image issue by switching to imported assets in /src/assets for proper bundling and hashing.
 - [x] Verify build and linting
